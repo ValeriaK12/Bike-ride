@@ -1,0 +1,49 @@
+
+{{#if way}}
+<div class="mainConteiner" id="{{way.id}}">
+  <div id="map"></div>
+  <div class="inform">
+    <h2> {{way.title}} </h2>
+    <h3 id="ratingAll">Рейтинг: {{way.rating}}</h3>
+    <h3>Населенный пункт: {{way.city}} </h3>
+    <p>Длина маршрута: {{way.distance}}</p>
+    <p>Автор: <a style="color: rgb(20, 18, 48);" href="/user/{{way.user_id}}">{{way.nameUser}}</a></p>
+    <p style="max-width: 500px;">{{way.body}}</p>
+    <div id="{{way.xy_start}}/{{way.xy_end}}" class="coordInfo"></div>
+    <p>Оставить отзыв: <select id="rating" name="selectorRating" class="selectorRating">
+        <option value="5">5</option>
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+      </select></p>
+    <textarea name="message" class="message"></textarea>
+    <button id="btnComment" type="button" name="submit_btn" value="Отправить">Отправить</button>
+    {{#if userlogIn.isEditor}}
+    <span><a class="deleteRoad" href="/ways/delete/{{way.id}}">Удалить маршрут</a> | <a class="editRoad"
+        href="/ways/edit/{{way.id}}">Редактировать маршрут</a></span>
+    {{/if}}
+    <div id="info" class="poleVvoda"></div>
+  </div>
+</div>
+<div class="boxComment">
+  <div class="otziyv">
+    <h2>Отзывы:</h2>
+    <div class="footer-line"></div>
+  </div>
+  <ul id="comentList">
+    {{#each comment}}
+    <li class="commentList">
+      <div id="comment"></div>
+      <h3><b><a style="color: rgb(20, 18, 48);" href="/user/{{this.user_id}}">{{this.nameUser}}</a></b></h3>
+      <span>Оценка: {{this.rating}}</span>
+      <p class="pshka">{{this.text}}</p>
+      {{#if this.isGrantDelComm}}
+      <a class="delComment" style="color: rgb(20, 18, 48);" href="/ways/comment/delete/{{this.id}}">Удалить комментарий
+      </a>
+      {{/if}}
+    </li>
+    {{/each}}
+  </ul>
+  {{/if}}
+</div>

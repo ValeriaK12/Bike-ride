@@ -1,0 +1,90 @@
+.message {
+  width: 350px;
+  resize: vertical;
+  padding: 15px;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 4px 4px 10px rgba(12, 3, 65, 0.06);
+  height: 60px;
+  border: 1px solid black;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.message:hover input:focus-visible {
+  border-radius: 5px;
+  border: 1px solid black !important;
+  border: 0 !important;
+}
+
+#btnComment {
+  border-radius: 5px;
+  background: transparent;
+  color: rgb(100, 98, 98);
+  border: 1px solid black;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 20px 75px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 320px;
+}
+
+#rating {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.boxComment {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 15px;
+}
+
+.otziyv {
+  margin-top: 20px;
+  margin-left: 150px;
+}
+
+.footer-line {
+  border: none;
+  background-color: rgb(5, 59, 95);
+  height: 2px;
+}
+
+#comentList {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 120px;
+}
+
+.pshka {
+  font-size: 25px;
+}
+
+#ratingAll {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.deleteRoad {
+  margin-left: 25px;
+  text-decoration: none;
+  color: rgb(5, 59, 95);
+}
+
+.editRoad {
+  text-decoration: none;
+  color: rgb(5, 59, 95);
+}

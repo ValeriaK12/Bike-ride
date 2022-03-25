@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100&display=swap");
+
+.header {
+  display: flex;
+  height: 60px;
+  justify-content: end;
+  padding: 10px;
+  background-color: rgb(5, 59, 95);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header__section {
+  display: flex;
+  align-items: center;
+}
+
+.no-bullets {
+  display: flex;
+  margin: 0;
+  padding: 15px;
+  padding-left: 1050px;
+}
+
+.pipe-separate {
+  display: inline;
+  margin-right: 5px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.pipe-separate:hover {
+  background-color: rgb(9, 117, 160);
+  border-radius: 4px;
+}
+
+.word {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 10;
+  top: 100px;
+  width: 100%;
+}
+
+.phrase {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  color: rgb(249, 253, 199);
+}
+
+.popular {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  color: rgb(1, 57, 95);
+  top: 365px;
+}
+
+.routes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.routesUser {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.sort {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.rout {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.differentSort {
+  width: 200px;
+  height: 40px;
+  margin-left: 20px;
+  border-radius: 5px;
+  color: rgb(5, 59, 95);
+  display: flex;
+  align-items: center;
+}
+
+.mainConteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.inform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px;
+  padding-left: 10px;
+  margin-right: 15px;
+}
+
+#map {
+  width: 900px;
+  height: 500px;
+}

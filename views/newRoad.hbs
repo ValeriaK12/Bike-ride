@@ -1,0 +1,52 @@
+
+{{#if way}}
+<div class="mainConteiner" id="{{way.id}}">
+  <div id="map"></div>
+  <div class="inform">
+    <form id="signinForm" method="POST" action="">
+      <div class="foto">
+        <input ageIn id="wayImage" class="form-control" name="name" type="text" required
+          placeholder="Введите ссылку изображения маршрута" value="{{way.url_img}}">
+      </div>
+      <div class="form-group">
+        <input bike id="wayTitle" class="form-control" name="name" type="text" required placeholder="Название маршрута"
+          value="{{way.title}}">
+      </div>
+      <div class="city">
+        <input id="wayCity" class="form-control" name="name" type="text" required placeholder="Город"
+          value="{{way.city}}">
+      </div>
+    </form>
+    <div class="aboutMe">
+      <textarea name="text" class="about_me" id="wayText"
+        placeholder="Подробная информация о маршруте">{{way.body}}</textarea>
+    </div>
+    <button id="{{way.id}}" class="btn btnEditWay">Изменить</button>
+    <div id="{{way.xy_start}}/{{way.xy_end}}/{{way.distance}}" class="coordInfo"></div>
+  </div>
+</div>
+<div id="edit" class="poleVvoda"></div>
+{{else }}
+<div class="mainConteiner" id="{{way.id}}">
+  <div id="map"></div>
+  <div class="inform">
+    <form id="signinForm" method="POST" action="">
+      <div class="foto">
+        <input ageIn id="wayImage" class="form-control" name="name" type="text" required
+          placeholder="Введите ссылку изображения маршрута">
+      </div>
+      <div class="form-group">
+        <input bike id="wayTitle" class="form-control" name="name" type="text" required placeholder="Название маршрута">
+      </div>
+      <div class="city">
+        <input id="wayCity" class="form-control" name="name" type="text" required placeholder="Город">
+      </div>
+    </form>
+    <div class="aboutMe">
+      <textarea name="text" class="about_me" id="wayText" placeholder="Подробная информация о маршруте"></textarea>
+    </div>
+    <button id="{{user.id}}" class="btn btnNewWay">Создать</button>
+  </div>
+</div>
+<div id="new" class="poleVvoda"></div>
+{{/if}}

@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+body {
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 550px;
+  width: auto;
+}
+
+input {
+  color: rgb(5, 59, 95);
+  width: 300px;
+  resize: vertical;
+  padding: 15px;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+  height: 20px;
+  border: 1px solid black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input:hover input:focus {
+  border-radius: 5px;
+  border: 1px solid black !important;
+  border: 0 !important;
+}
+
+button {
+  border-radius: 5px;
+  background: transparent;
+  color: rgb(100, 98, 98);
+  border: 1px solid black;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 20px 75px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 30px 15px 30px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+button:hover,
+button:focus {
+  background-color: rgb(58, 78, 92);
+  color: #ffffff;
+}
+
+.form-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container .signup .form-title {
+  color: #fff;
+  font-size: 1.7em;
+  text-align: center;
+}
+
+.form-container .signup .form-holder {
+  border-radius: 15px;
+  background-color: #fff;
+  overflow: hidden;
+  margin-top: 50px;
+  opacity: 0.7;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease;
+}
+
+.form-container .signup .form-holder .input {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding: 8px 15px;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  font-size: 12px;
+}
+
+.form-container .signup .form-holder .input:last-child {
+  border-bottom: 0;
+}
+
+.form-container .signup .form-holder .input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.form-container .signup .submit-btn {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.7);
+  border: 0;
+  border-radius: 15px;
+  display: block;
+  margin: 15px auto;
+  padding: 15px 45px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease;
+}
+
+.form-container .signup .submit-btn:hover {
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+}

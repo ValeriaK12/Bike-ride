@@ -1,0 +1,40 @@
+
+{{#if user}}
+<div class="main">
+  <div class="mainform">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT02opOAZ9DQHHHlpvxV_1DsjeYGGAbjEvg5w&usqp=CAU"
+      width="30px" height="30px">
+    <h2>Личный кабинет</h2>
+  </div>
+  <form id="signinForm" method="POST" action="">
+    <div class="form-group">
+      <input bike id="username" class="form-control" name="name" type="text" required placeholder="марка байка"
+        value="{{user.bike}}">
+    </div>
+    <div class="old">
+      <input ageIn id="username" class="form-control" name="name" type="number" required placeholder="Возраст"
+        value="{{user.age}}">
+    </div>
+    <div class="city">
+      <input id="username" class="form-control" name="name" type="text" required placeholder="Ваш город"
+        value="{{user.city}}">
+    </div>
+  </form>
+</div>
+<div class="aboutMe">
+  <textarea name="text" class="about_me" id="about_me" placeholder="О себе">{{user.about_me}}</textarea>
+</div>
+<div class="aboutMe">
+  <button id="{{user.id}}" class="btn btnEnterEditProfile">Редактировать</button>
+  {{#if userlogIn.isAdmin}}
+  <div id="adm">
+    {{#if user.userRole}}
+    <button id="{{user.id}}" class="btn form-control btnToAddAdmin">Установить права администратора</button>
+    {{else }}
+    <button id="{{user.id}}" class="btn form-control btnToDelAdmin">Удалить права администратора</button>
+    {{/if}}
+  </div>
+  {{/if}}
+</div>
+</div>
+{{/if}}

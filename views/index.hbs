@@ -1,0 +1,21 @@
+<div class="popular">
+  <h5>Популярные маршруты</h5>
+  <select id="selector" name="differentSort" class="differentSort">
+    <option value="1">По рейтингу</option>
+    <option value="2">По дате</option>
+    <option value="3">По длине маршрута</option>
+  </select>
+</div>
+
+<div class="routes">
+
+  {{#each ways}}
+  <div class="rout" id="{{this.id}}">
+    <img src="{{this.url_img}}" alt="sfgdsfghfd" class="img" width="200px" height="200px">
+    <h3>{{this.title}}</h3>
+    <button class="btn btnInfo" id="{{this.id}}">Посмотреть</button>
+    <p>Рейтинг: {{this.rating}}</p>
+    <p>Расстояние: {{this.distance}}</p>
+  </div>
+  {{/each}}
+</div>

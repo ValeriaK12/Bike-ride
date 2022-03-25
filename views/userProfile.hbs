@@ -1,0 +1,41 @@
+
+{{#if user}}
+<div class="mainaboutUser">
+  <div class="mainformUser">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT02opOAZ9DQHHHlpvxV_1DsjeYGGAbjEvg5w&usqp=CAU"
+      width="30px" height="30px">
+    <h2>Личный кабинет</h2>
+  </div>
+  <form id="signinForm" method="POST" action="">
+    <div class="form-group">
+      <p>Модель велика: {{user.bike}}</p>
+    </div>
+    <div class="old">
+      <p>Возраст: {{user.age}} лет</p>
+    </div>
+    <div class="city">
+      <p>Город: {{user.city}}</p>
+    </div>
+  </form>
+</div>
+<div class="aboutMe">
+  <p>{{user.about_me}}</p>
+</div>
+{{#if userlogIn.isEditor}}
+<div class="aboutMe">
+  <button id="{{user.id}}" class="btn btnEditProfile">Редактировать</button>
+</div>
+{{/if}}
+</div>
+{{/if}}
+<div class="routesUser">
+  {{#each ways}}
+  <div class="rout" id="{{this.id}}">
+    <img src="{{this.url_img}}" alt="sfgdsfghfd" class="img" width="200px" height="200px">
+    <h3>{{this.title}}</h3>
+    <button class="btn btnInfo" id="{{this.id}}">Посмотреть</button>
+    <p>Рейтинг: {{this.rating}}</p>
+    <p>Расстояние: {{this.distance}}</p>
+  </div>
+  {{/each}}
+</div>

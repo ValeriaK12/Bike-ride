@@ -1,0 +1,13 @@
+<form id="signupForm" method="POST" action="/user/signup">
+  <div class="form-container">
+    <h2 class="form-title" id="formTitle">Регистрация</h2>
+    <div class="form-holder">
+      <input id="username" class="input" type="text" placeholder="Введите имя" name="name" required
+        pattern="[A-Za-z]\w+" title="Латинские буквы, цифры и _">
+      <input id="email" class="input" type="text" placeholder="Введите e-mail" name="email" required
+        pattern="^[A-Z0-9a-z._%+-]+@[A-Z0-9a-z.-]+\.[A-Za-z]{2,}$">
+      <input type="password" class="input" placeholder="Введите пароль" name="password" required>
+    </div>
+    <button type="submit" class="registerbtn">Регистрация</button>
+  </div>
+</form
