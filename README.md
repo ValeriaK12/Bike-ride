@@ -4,7 +4,7 @@
 ### Используемые технологии: 
 HTML, CSS, Ajax, REST API Express.js, Node.js, PostgreSQL(Sequelize-cli), cookie + Redis, Yandex Maps Api, Bootstrap, Handlebars(hbs)
 <br/>
-
+<br/>
 Bice Race — это приложение, в котором пользователи  прокладывают веломаршруты, деляться ими, оставляют отзывы и оценки на чужие маршруты.
 <br/>
 <br/>
@@ -22,8 +22,9 @@ Bice Race — это приложение, в котором пользоват�
 <br/>
 
 ## Запуск приложения
-
-1. npm i
-2. npx sequelize db:create
-3. npx sequelize db:migrate
-4. npm start
+```sh
+npm i
+npx sequelize db:create
+npx sequelize db:migrate
+npm start
+```
