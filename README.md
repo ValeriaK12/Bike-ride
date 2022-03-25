@@ -1,9 +1,10 @@
 # Bike race
 
 ## Веб-приложение для составления маршрута велопрогулок
-### Используемые технологии: HTML, CSS, Ajax, REST API Express.js, Node.js, PostgreSQL(Sequelize-cli), cookie + Redis, Yandex Maps Api, Bootstrap, Handlebars(hbs)
+### Используемые технологии: 
+HTML, CSS, Ajax, REST API Express.js, Node.js, PostgreSQL(Sequelize-cli), cookie + Redis, Yandex Maps Api, Bootstrap, Handlebars(hbs)
 <br/>
-<br/>
+
 Bice Race — это приложение, в котором пользователи  прокладывают веломаршруты, деляться ими, оставляют отзывы и оценки на чужие маршруты.
 <br/>
 <br/>
